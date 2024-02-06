@@ -1,0 +1,124 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 16px
+}
+
+ul {
+    margin: 0;
+    padding: 0
+}
+
+li {
+    list-style-type: none
+}
+
+:root {
+    --field-dark: #192a3c;
+    --field-white: #f5f5f5;
+    --field-beige: #f1ece1;
+    --field-light-blue: #0071bb;
+    --field-blue: #192a3c;
+    --field-green: rgb(0, 104, 55);
+    --field-light-grey: #e5e5e5;
+    --field-dark-grey: #5b6670;
+    --field-grey: #979ca0;
+    --field-brown: #ae804e;
+    --field-red: #e05526;
+    --field-black: #231f20;
+    --ep-red: #e05526;
+    --ep-white: #e0e1e4;
+    --ep-black: #020008;
+    --ep-lightgrey: #d5d5d5;
+    --ep-grey: #9ba7aa;
+    --ep-darkgrey: #717d85;
+    --ep-orange: #eb3622;
+    --ep-pink: #e70069;
+    --unit: 23.52px
+}
+
+@font-face {
+    font-family: UniversTE20T;
+    src: url(../../fonts/TE20T-9Id6Hl_V.woff) format("woff")
+}
+
+@font-face {
+    font-family: TechnoType-regular;
+    src: url(../../fonts/Technotype34_EP_series-Regular-e128r9ta.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: TechnoType-medium;
+    src: url(../../fonts/Technotype34_EP_series-Medium-EMMAYK8q.woff2) format("woff2")
+}
+
+@font-face {
+    font-family: TechnoType-bold;
+    src: url(../../fonts/Technotype34_EP_series-Bold-szrjc1fc.woff2) format("woff2")
+}
+
+body {
+    background-image: url(../../images/ep133-bkgd.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: repeat;
+
+    font-family: TechnoType-bold, sans-serif;
+    font-size: 1.3rem;
+    color: var(--field-blue);
+}
+
+.ep133-container {
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.ep133-library-container {
+    display: inline-flex;
+}
+
+.ep133-sample-library {
+    background-color: #e5e6e6;
+    border: 0.5px solid #231F20;
+}
+
+.ep133-header {
+    font-size: 13px;
+    background-color: #EF4E26;
+    color: #e5e6e6;
+    padding: 2px 10px;
+    white-space: nowrap;
+}
+
+.ep133-sounds-container {
+    background-color:#e5e6e6;
+    font-size: 13px;
+    border-right: 1px solid #D8DCDC;
+}
+
+.ep133-sounds-container li {
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid #D8DCDC;
+}
+
+.ep133-number {
+    padding: 0 5px 0 15px;
+    border-right: 1px solid #D8DCDC;
+    width: 20px;
+    overflow: hidden;
+}
+
+.ep133-sound {
+    padding-right: 10px;
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 420px) {
+    .ep133-library-container {
+        display: block;
+        zoom: 1.5;
+    }
+}
